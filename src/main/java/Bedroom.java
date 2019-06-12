@@ -13,4 +13,12 @@ public class Bedroom {
         this.capacity = capacity;
         this.guests = new ArrayList<Guest>();
     }
+
+    public void addGuestToRoom(Guest guest){
+        this.guests.add(guest);
+    }
+
+    public int guestsInBedroomCount() {
+        return guests.size();
+    }
 }

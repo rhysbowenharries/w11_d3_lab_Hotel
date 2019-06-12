@@ -20,12 +20,19 @@ public class HotelTest {
 
     @Test
 //    can add room into hotel room array?
-    public void canAddRoomToHotel(){
-        hotel.addRoom(bedroom);
+    public void canAddBedroomToHotel(){
+        hotel.addBedroom(bedroom);
         assertEquals(1, hotel.bedRoomCount());
     }
 
 //    @Test
 //    can get number of rooms in hotel room array?
+
+    @Test
+//    can hotel check guest into bedroom?
+    public void canCheckInGuestToBedroom(){
+        hotel.checkInGuestToBedroom(bedroom, guest);
+        assertEquals(1, bedroom.guestsInBedroomCount());
+    }
 
 }
